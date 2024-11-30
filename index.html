@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Project JavaScript</title>
+  </head>
+  <body>
+    <section id="course-catalog">
+      <h2>Available Courses</h2>
+      <div class="course">
+        <h3>DevOps</h3>
+        <p>
+          Learn the essentials of DevOps, covering CI/CD pipelines, automation,
+          and cloud infrastructure.
+        </p>
+        <p><strong>Price:</strong> 500 DT</p>
+        <p><strong>Duration:</strong> 6 weeks</p>
+      </div>
+
+      <div class="course">
+        <h3>Web Development Level 1</h3>
+        <p>
+          Start your journey in web development by learning HTML, CSS, and basic
+          JavaScript.
+        </p>
+        <p><strong>Price:</strong> 600 DT</p>
+        <p><strong>Duration:</strong> 8 weeks</p>
+      </div>
+
+      <div class="course">
+        <h3>Web Development Level 2</h3>
+        <p>
+          Enhance your skills with advanced JavaScript, React.js , Node.js,
+          Express.js and Mongo.db.
+        </p>
+        <p><strong>Price:</strong> 700 DT</p>
+        <p><strong>Duration:</strong> 8 weeks</p>
+      </div>
+
+      <div class="course">
+        <h3>Deep Learning</h3>
+        <p>
+          Dive into deep learning concepts, including neural networks,
+          TensorFlow, and AI model training.
+        </p>
+        <p><strong>Price:</strong> 800 DT</p>
+        <p><strong>Duration:</strong> 10 weeks</p>
+      </div>
+
+      <div class="course">
+        <h3>Python</h3>
+        <p>
+          Master Python for data analysis, scripting, and software development.
+        </p>
+        <p><strong>Price:</strong> 400 DT</p>
+        <p><strong>Duration:</strong> 6 weeks</p>
+      </div>
+    </section>
+
+    <form action="#/" id="form">
+      <label for="fname">First name :</label>
+      <br />
+      <input type="text" name="fname" placeholder="First name..." />
+      <br />
+      <label for="lname">Last name :</label>
+      <br />
+      <input type="text" name="lname" placeholder="Last name..." />
+      <br />
+      <label for="email">Email :</label>
+      <br />
+      <input type="email" name="email" placeholder="Email..." />
+      <br />
+      <label for="phone">Phone :</label>
+      <br />
+      <input type="number" name="phone" placeholder="Phone..." />
+      <br />
+      <label for="level">Level of Education :</label>
+      <br />
+      <input type="number" name="level" placeholder="Level..." />
+      <p style="color: red">You must choose 2 or 3 courses :</p>
+      <label for="courses">Courses :</label>
+      <br />
+      <select name="courses" id="courses" multiple>
+        <option value="devops">Devops</option>
+        <option value="web1">Web Development Level 1</option>
+        <option value="web2">Web Development Level 2</option>
+        <option value="dl">Deep Learning</option>
+        <option value="python">Python</option>
+      </select>
+      <label for="date-1">Starting date for the first course :</label>
+      <input type="date" name="date-1" id="date-1" />
+      <label for="date-2">Starting date for the second course :</label>
+      <input type="date" name="date-2" id="date-2" />
+      <div id="third-date-div">
+        <label for="date-3">Starting date for the third course :</label>
+        <input type="date" name="date-3" id="date-3" />
+      </div>
+      <p id="error-message"></p>
+      <p id="price"></p>
+      <button type="submit"><a href="#report">Valider</a></button>
+    </form>
+    <div id="report"></div>
+    <script src="index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+  </body>
+</html>
